@@ -11,16 +11,20 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="app">
+        <div id="app" class="text-center py-4">
             
             
-            <main>
-                <h1>
+            <main class=" py-4">
+                <h1 class="text-success">
                     {{ message }}
                 </h1>
-                <div v-for="(rndEmail, index) in email">
-                    {{ email[index] }}
-                </div>
+                <ul >
+                    <li v-for="(rndEmail, index) in email">
+                        {{ email[index] }}
+                    </li>
+                </ul>
+                
+                
             </main>
 
         </div>

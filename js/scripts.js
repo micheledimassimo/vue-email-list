@@ -4,9 +4,10 @@ const { createApp } = Vue
         data() {
             return {
                 message: 'Vue Email List',
-                email: ['']
+                email: []
             }
         },
+      
         created() {
             
             //ciclo la richiesta API 10 volte per ottenere 10 mail diverse 
@@ -22,9 +23,15 @@ const { createApp } = Vue
                
                 
             }
+            
         }
+       
         
     }).mount('#app');
+
+
+    
+
 
 
     
